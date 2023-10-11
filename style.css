@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    width: 120px;
+    cursor: pointer;
+    color:aliceblue ;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li::after{
+    content: '' ;
+    height: 3px;
+    width: 0;
+    background-color: #002896;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+    
+}
+
+.container{
+    width: 100%;
+    position: absolute;
+    margin-top: 5%;;
+    text-align: center;
+    color: #fff;
+}
+
+.container h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 150px;
+
+}
+
+
+.container p{
+    margin-top: 10px;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0; 
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    color: aliceblue;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+}
+
+.learn-more{
+    text-decoration: none;
+    color:inherit;
+}
